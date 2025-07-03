@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "2963145f-5ae0-436a-ab1c-1a0f93f53d34",
+		"name": "API-with-SQLSERVER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37951473"
+	},
+	"item": [
+		{
+			"name": "GETALLProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/products/2"
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"PRODUCTID\": 8,\r\n    \"PRODUCTNAME\": \"Screen\",\r\n    \"PRICE\": 40.00,\r\n    \"STOCK\": 60 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/products/8"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"PRODUCTID\": 8,\r\n    \"PRODUCTNAME\": \"Screen\",\r\n    \"PRICE\": 40.00,\r\n    \"STOCK\": 60 \r\n}"
+				},
+				"url": "http://localhost:3000/api/products/3"
+			},
+			"response": []
+		}
+	]
+}
